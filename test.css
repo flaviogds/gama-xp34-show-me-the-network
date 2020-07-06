@@ -39,11 +39,11 @@ Countdown Timer
 }
 
 .countdown-text p {
-    margin: 0 auto;
+    text-align: center;
+    width: 40px;
 }
 
 .countdown-timer p {
-    align-content: center;
     text-align: center;
     width: 40px;
     height: 40px;
