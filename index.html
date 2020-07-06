@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-    <meta charset="UTF-8">
+<html lang="en">
+
+<head>
+    <meta content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
 
     <link rel="stylesheet" href="node_modules/bootstrap/compile/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <script src="js/source.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <section>
+        <form class="form">
+            <input type="text" placeholder="nome" id="nome" required />
+            <input type="email" placeholder="email" id="email" required />
+            <button type="button" onclick="addData()">Enviar</button>
+        </form>
+    </section>
 
 
-    <title>Document</title>
-    </head>
 
-    <body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
+    <script type="module" src="js/db-shtn.js"></script>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="node_modules/jquery/dist/jquery.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+
+</body>
+
 </html>
