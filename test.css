@@ -1,5 +1,60 @@
 
-input, button {
+/* Generic Button */
+.button {
+    padding-top: 15px;
+    height: 50px;
+    align-content: center;
+    background: #844685;
+}
+
+.button:hover {
+    box-shadow: 5px 5px #F3C623;
+}
+
+.button:active {
+    box-shadow: inset 2px 4px 4px rgba(85, 26, 88, 0.5);
+}
+
+/*
+---------------------------------------------------------------------------------------------------------------------------
+Countdown Timer
+*/
+
+.countdown-container {
+    margin: 0 auto;
+    width: 282px;
+    height: 200px;
+    padding-top: 3.5em;
+}
+
+.countdown-header {
+    height: 40px;
+    align-content: center;
+    background: #F3C623;
+}
+
+#countdown-button a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.countdown-text p {
+    margin: 0 auto;
+}
+
+.countdown-timer p {
+    align-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+/*
+---------------------------------------------------------------------------------------------------------------------------
+Exit Intent Pop Up
+*/
+
+.exit-input, button {
     -webkit-appearance: none;
     border-radius: 0;
     outline: none;
@@ -8,7 +63,7 @@ input, button {
     -webkit-font-smoothing: antialiased
 }
 
-p.button input{
+p.button .exit-input{
     display: inline-block;
     background: #FFD800;
     border: 0;
@@ -22,7 +77,7 @@ p.button input{
     -webkit-transition: background 0.3s;
     transition: background 0.3s
 }
-p.button input:hover {
+p.button .exit-input:hover {
     background: #FF9000
 }
 form {
@@ -30,12 +85,12 @@ form {
     margin-bottom: 31px
 }
 
-form input {
+form .exit-input {
     font: 300 18px/1em 'Roboto Slab', serif;
     color: #000000
 }
 
-form input[type=text] {
+form .exit-input[type=text] {
     background: #fff;
     line-height: 1em;
     border: 1px solid #d4d7da;
@@ -127,7 +182,7 @@ form input[type=text] {
     width: 100%;
 }
 
-#news-signup .newsletter-content form p:not(.button) input {
+#news-signup .newsletter-content form p:not(.button) .exit-input {
     width: 100%;
     margin: 0;
     padding: 12px 15px !important;
@@ -139,7 +194,7 @@ form input[type=text] {
     width: 100%
 }
 
-#news-signup .newsletter-content form .button input {
+#news-signup .newsletter-content form .button .exit-input {
     width: 100%;
     padding: 20px 25px 18px !important;
     font-size: 12px
@@ -159,7 +214,7 @@ form input[type=text] {
         width: 800px;
         margin: 7% auto;
     }
-    #news-signup .newsletter-content form .button input {
+    #news-signup .newsletter-content form .button .exit-input {
         width: auto;
         margin: 0
     }
@@ -178,9 +233,10 @@ form input[type=text] {
         float: left;
         width: auto
     }
-    .newsletter-content form p:not(.button) input {
+    .newsletter-content form p:not(.button) .exit-input {
         width: 300px!important;
         margin: 0 15px 0 0
     }
 }
 
+ 
