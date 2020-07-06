@@ -1,0 +1,218 @@
+
+@media(max-width: 360px){
+    /*SECTION FRONT*/
+    .banner{
+     background: url('images/banner.png');
+     height: 196px;
+     background-size: 360px;
+    }
+
+    .logo{
+        position: relative;
+        width: 88px;
+        height: 34px;
+        margin: 25px 0 0 39px;
+    }
+
+    .title{
+        position: relative;
+        padding:0;
+        margin: 25px 39px 10px 39px;
+        background: rgba(243, 198, 35, 0.7);
+
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        color: #333333;
+    }
+
+    .sub-title{
+        position: relative;
+        padding: 40px 39px 0 39px;
+
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        color: #000000;
+    }
+    .contrast{
+        color: #844685;
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sub-box{
+        position: relative;
+        padding: 9px 39px 0 39px;
+
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 130%;
+
+        letter-spacing: 0.04em;
+        color: #333333;
+    }
+    .event{
+        position: relative;
+        padding-top: 6px;
+        text-align: center;
+        margin: 20px 39px 20px 39px;
+
+        height: 40px;
+        background: #F3C623;
+
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+
+        color: #333333;
+
+    }
+
+    .btn-int{
+        height: 50px;
+        width: 282px;
+        margin: 0 39px 40px 39px;
+        background: #844685;
+        text-align: center;
+        border: 0;
+
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    /*SECTION MIDLE*/
+
+    .bg-midle{
+        background: #844685;
+    }
+    .sub-midle{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        color: #FFFFFF;
+
+        padding: 30px 0 0 39px;
+    }
+    .baloom-box{
+        align-items: center;
+        width: 282px;
+        margin: 20px 39px 0px 39px;
+        padding-bottom: 20px;
+    }
+    .baloom{
+        border-radius: 100%;
+        margin: 0 ;
+        width: 100px;
+    }
+    .border{
+        border-radius: 100%;
+        margin: 0 0 9px 96px;
+        padding-bottom: 2.5px;
+        width: 106px;
+        background: #FFFFFF;
+    }
+    .sub-bio{
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        color: #333333;
+        width: 127px;
+        height: 30;
+        margin-left: 78px;
+        background: #F3C623;
+    }
+    .text-bio{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+    }
+
+    /*SECTION END*/
+
+    .submit-box{
+        width: 282px;
+        margin: 0 39px 0 39px;
+
+    }
+    .invite{
+        position: relative;
+        width: 292px;
+        padding: 40px 39px 0 39px;
+        text-align: center;
+        
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        color: #000000;
+    }
+    .label{
+        width: 282px;
+        margin: 6px 0 0 0;
+    }
+    .input{
+        width: 282px;
+        margin: 10px 0 10px 0;
+
+    }
+    .btn-input{
+        width: 282px;
+        height: 50px;
+        margin-top: 10px;
+        background: #844685;
+        text-align: center;
+        border: 0;
+
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .footer{
+        height: 40px;
+        left: 0px;
+        bottom: 0px;
+        background: #F3C623;
+        position: relative;
+
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 130%;
+        color: #333333;
+        text-align: center;
+        padding-top: 12px;
+
+    }
+
+}
