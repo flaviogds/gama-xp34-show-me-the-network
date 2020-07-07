@@ -51,7 +51,7 @@ body, html {
 
     .thank-you-msg {
         margin: 0 10%;
-        font-size: 4.5vw;
+        font-size: 4.2vw;
     }
 
     .email-msg {
@@ -60,15 +60,16 @@ body, html {
     }
 
     #top-msg {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     #bottom-msg {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .thank-you-msg p {
         height: 80%;
+        padding-bottom: 10%;
     }
 }
 
@@ -97,7 +98,7 @@ body, html {
 
     .thank-you-msg p {
         height: 80%;
-        margin-top: 5%;
+        padding-bottom: 15%;
     }
 }
 
