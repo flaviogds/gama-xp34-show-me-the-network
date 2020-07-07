@@ -2,35 +2,34 @@
 .banner{
     background: url('images/banner.png') no-repeat;
     background-size: 100%;
-    min-height: 650px;
-    max-height: 707px;
+    min-height: 19.6vw;
+    max-height: 70.7vw;
 }
 .logo{
     width: 15%;
-    max-width: 155.29px;
-    min-width: 88px;
-    margin: 14.3% 0 0 11%;
+    max-width: 15.529vw;
+    min-width: 8.8vw;
+    margin: 12.5vw 0 0 7vw;
+}
+.container{
+    padding: 2vw 5vw 8vw 5vw;
+    margin-top: 7.5vw;
 }
 
-.title{
-    padding:0;
-    margin: 9.3% 11% 0 18%;
-    max-width: 930px;
+.title{/*Corrigir*/
+    padding: 0 0vw 0 0vw;
     background: rgba(243, 198, 35, 0.7);
-
     font-weight: bold;
-    font-size: 72px;
+    font-size: 7vw;
     line-height: 130%;
     text-align: center;
     color: #333333;
 }
 
 .sub-title{
-    position: relative;
-    margin: 5% 11% 0 11%;
-
+    padding: 2vw 8vw 2vw 8vw;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 4.8vw;
     line-height: 130%;
     color: #000000;
 }
@@ -41,45 +40,52 @@
     margin: 0;
 }
 .sub-box{
-    position: relative;
-    margin: 1.5% 11% 0 11%;
-    padding: 0;
+    padding: 2vw 8vw 2vw 8vw;
 
-    font-weight: normal;
-    font-size: 24px;
+    font-size: 2.4vw;
     line-height: 130%;
     letter-spacing: 0.04em;
     color: #333333;
 }
+.cont-event{
+    margin: auto;
+    padding: 5vw 22.5vw 5vw 22.5vw;
+}
 .event{
-    width: 550px;
-    height: 70px;
+    margin: 0;
+    width: 55vw;
+    height: 7vw;
     padding-top: 6px;
-    text-align: center;
-    margin: 9.3% 11% 0 30%;
     background: #F3C623;
 
+    text-align: center;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 4.8vw;
     line-height: 130%;
     color: #333333;
 
 }
+.cont-timer{
+    margin: auto;
+    padding: 0 27.5vw 5vw 27.5vw;
+}
 .timer-box{
-    margin: 2% 11% 0 34%;
-    font-size: 48px;
+    font-size: 4.8vw;
     font-weight: bold;
 }
-
+.cont-button{
+    margin: auto;
+    margin-bottom: 2vw;
+    padding: 0 26.5vw 5vw 26.5vw;
+}
 .btn-int{
-    height: 60px;
-    width: 475px;
-    margin: 2% 11% 11% 33%;
+    height: 6vw;
+    width: 47vw;
     background: #844685;
     text-align: center;
     border: 0;
-    outline: none;
 
+    font-size: 1.6vw;
     font-weight: bold;
     line-height: 130%;
     text-align: center;
@@ -96,53 +102,51 @@
 
 /*SECTION MIDLE*/
 .row{
-    width: 100%;
+    margin: auto;
+    padding: 0 4.5vw 2vw 4.5vw;
 }
 
 .bg-midle{
     background: #551A58;
 }
 .sub-midle{
-    padding: 5% 0 0 11%;
+    padding: 6vw 4vw 5vw 4vw;
 
     font-weight: bold;
-    font-size: 48px;
+    font-size: 4.8vw;
     line-height: 130%;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;  
 }
 .baloom-box{
     align-items: center;
-    width: 475px;
-    margin: 0 10% 10% 10%;
+    width: 40vw;
 }
 .baloom{
     border-radius: 100%;
-    margin: 0 ;
-    width: 265px;
+    width: 26.5vw;
 }
 .border{
     border-radius: 100%;
-    margin: 0 0 9px 96px;
-    padding-bottom: 2.5px;
-    width: 278px;
+    margin: 0 0 9vw 6.6vw;
+    padding-bottom: 0.25vw;
+    width: 27.8vw;
     background: #FFFFFF;
 }
 .sub-bio{
-    width: 475px;
-    height: 60px;
+    width: 40vw;
+    height: 6.0vw;
     padding-top: 6px;
     background: #F3C623;
 
     font-weight: bold;
-    font-size: 36px;
+    font-size: 3vw;
     line-height: 130%;
     text-align: center;
     color: #333333;
 }
 .text-bio{
-    width: 475px;
-    font-size: 30px;
+    width: 40vw;
+    font-size: 2.8vw;
     line-height: 130%;
     letter-spacing: 0.04em;
     color: #FFFFFF;
@@ -151,42 +155,44 @@
 /*SECTION END*/
 
 .submit-box{
-    width: 475px;
-    margin: 0 11% 0 33%;
+    margin: auto;
+    width: 45vw;
+    min-width: 450px;
 
 }
+.form{
+    margin: 0;
+}
 .invite{
-    position: relative;
-    width: 475px;
-    padding: 40px 39px 0 39px;
+    width: 45vw;
+    min-width: 450px;
     text-align: center;
 
     font-weight: bold;
-    font-size: 48px;
+    font-size: 4.8vw;
     line-height: 130%;
     color: #000000;
 }
 .label{
-    width: 475px;
-    margin: 10px 0 0 0;
-    font-size: 24px;
+    width: 45vw;
+    min-width: 450px;
+    font-size: 1.6vw;
 }
 .input{
-    width: 475px;
-    font-size: 24px;
-    height: 60px;
-    margin: 5px 0 10px 0;
-
+    width: 45vw;
+    min-width: 450px;
+    font-size: 1.6vw;
+    height: 4vw;
 }
 .btn-input{
-    height: 60px;
-    width: 475px;
-    margin-top: 20px;
+    height: 4vw;
+    width: 45vw;
+    min-width: 450px;
     background: #844685;
-    text-align: center;
     border: 0;
-    outline: none;
-
+    
+    text-align: center;
+    font-size: 2vw;
     font-weight: bold;
     line-height: 130%;
     text-align: center;
@@ -215,144 +221,144 @@
     box-shadow: inset 2px 4px 4px rgba(85, 26, 88, 0.5);
 }
 
-
-@media(max-width: 375px){
-    .banner{
-        min-height: 196px;
-        max-height: 540px;
+@media(max-width: 768px){
+    .container{
+        padding: 2vw 1vw 8vw 1vw;
+        margin-top: 7.5vw;
     }
-    .logo{
-        position: relative;
-        width: 88px;
-        height: 34px;
-        margin: 25px 0 0 39px;
-    }
-
-    .title{
-        margin: 8.5% 9.11% 10px 9.11%;
-        font-size: 24px;
-    }
-
-    .sub-title{
-        padding: 9.5% 9.11% 0 9.11%;
-        padding: 0 0 20px 0;
-        font-size: 20px;
-    }
-    .sub-box{
-        padding: 0 9.11% 0 9.11%x;
-        margin-bottom: 5%;
-
-        font-size: 14px;
-    }
-    .event{
-        padding-top: 6px;
-        margin: 15% 9.11% 4.6% 12.5%;
-        height: 40px;
-        width: 282px;
-        font-size: 20px;
-    }
-
-    .btn-int{
-        height: 50px;
-        width: 282px;
-        margin: 0 0 9.11% 12.5%;
-        outline: none;
-    }
-
-    /*SECTION MIDLE*/
-
-    .sub-midle{
-        font-size: 20px;
-        padding: 8% 0 0 9.11%;
+    .row{
+        margin: auto;
+        padding: 0 4.5vw 2vw 4.5vw;
     }
     .baloom-box{
-        width: 282px;
-        margin: 4.6% 9.11% 0px 9.11%;
-        padding-bottom: 4.6%;
+        width: 35vw;
+        margin: 0 5vw 0 5vw;
     }
     .baloom{
-        margin: 0 ;
-        width: 100px;
+        width: 26.5vw;
     }
     .border{
-        margin: 0 0 9px 96px;
-        padding-bottom: 2.5px;
-        width: 106px;
+        margin: 0 0 9vw 6.6vw;
+        padding-bottom: 0.25vw;
+        width: 27.8vw;
     }
     .sub-bio{
-        padding-top: 3px;
-        width: 282px;
-        height: 30px;
+        width: 35vw;
+        height: 5.8vw;
+
+        font-size: 2.6vw;
+    }
+    .text-bio{
+        width: 35vw;
+
+        font-size: 2.2vw;
+    }
+    .submit-box{
+        margin: auto;
+        width: 45vw;  
+    }
+    .form{
+        margin: 0;
+    }
+    .invite{
+        margin-top: 5vw;
+    }
+    .label{
+        width: 45vw;
+        font-size: 16px;
+        margin-top: 5vw;
+        margin-bottom: 0;
+    }
+    .input{
+        width: 45vw;
+        font-size: 16px;
+        height: 4vw;
+    }
+    .btn-input{
+        height: 40px;
+        width: 450px;
+        margin-top: 2vw;
+        font-size: 18px;
+    }
+
+}
+@media(max-width: 480px){
+    /*SECTION FRONT*/
+    .sub-box{
+        padding: 2vw 8vw 0 8vw;
+        font-size: 16px;
+    }
+    .cont-button{
+        margin: auto;
+        margin-bottom: 2vw;
+        padding: 0 29.25vw 5vw 29.25vw;
+    }
+    .btn-int{
+        height: 40px;
+        width: 28.2vw;
+        min-width: 200px;
+        font-size: 14px;
+
+    }
+    /*SECTION MIDLE*/
+    .row{
+        margin: auto;
+        padding: 0 16vw 2vw 16vw;
+    }
+    .sub-midle{
+        padding: 6vw 4vw 5vw 4vw;
+        font-size: 16px;
+    }
+    .baloom-box{
+        align-items: center;
+        width: 40vw;
+    }
+    .baloom{
+        width: 30vw;
+    }
+    .border{
+        border-radius: 100%;
+        margin: 0 0 9vw 15.6vw;
+        padding-bottom: 0.25vw;
+        width: 30vw;
+        background: #FFFFFF;
+    }
+    .sub-bio{
+        width: 60vw;
+        height: 6.0vw;
+        min-width: 200px;
+        min-height: 40px;
+        padding-top: 6px;
         font-size: 18px;
     }
     .text-bio{
-        width: 282px;
-        font-size: 14px;
+        width: 60vw;
+        font-size: 16px;
     }
 
     /*SECTION END*/
 
     .submit-box{
-        width: 282px;
-        margin: 0 39px 0 39px;
-
+        margin: auto;
+        width: 200px;
     }
     .invite{
-        position: relative;
-        width: 292px;
-        padding: 40px 39px 0 39px;
-        text-align: center;
-        
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 130%;
-        color: #000000;
+        width: 200px;
+        font-size: 18px;
     }
     .label{
-        width: 282px;
-        margin: 6px 0 0 0;
+        width: 150px;
+        font-size: 14px;
     }
     .input{
-        width: 282px;
-        margin: 10px 0 10px 0;
-
+        width: 150px;
+        font-size: 14px;
+        height: 30px;
     }
     .btn-input{
-        width: 282px;
-        height: 50px;
-        margin-top: 10px;
-        background: #844685;
-        text-align: center;
-        border: 0;
-        outline: none;
-
-        font-family: 'Roboto' sans-serif;
-        font-style: normal;
-        font-weight: bold;
+        height: 30px;
+        width: 150px;
         font-size: 16px;
-        line-height: 130%;
-        text-align: center;
-        color: #FFFFFF;
-    }
-
-    .footer{
-        height: 40px;
-        left: 0px;
-        bottom: 0px;
-        background: #F3C623;
-        position: relative;
-
-        font-family: 'Roboto' sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 130%;
-        color: #333333;
-        text-align: center;
-        padding-top: 12px;
-
     }
 
 }
