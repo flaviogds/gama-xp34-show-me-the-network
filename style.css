@@ -73,6 +73,7 @@
     background: #844685;
     text-align: center;
     border: 0;
+    outline: none;
 
     font-weight: bold;
     line-height: 130%;
@@ -170,6 +171,7 @@
     background: #844685;
     text-align: center;
     border: 0;
+    outline: none;
 
     font-weight: bold;
     line-height: 130%;
@@ -189,6 +191,14 @@
     text-align: center;
     padding-top: 12px;
 
+}
+
+button:hover, .btn-input:hover {
+    box-shadow: 5px 5px #F3C623;
+}
+
+button:active, .btn-input:active {
+    box-shadow: inset 2px 4px 4px rgba(85, 26, 88, 0.5);
 }
 
 
@@ -232,6 +242,7 @@
         height: 50px;
         width: 282px;
         margin: 0 0 9.11% 12.5%;
+        outline: none;
     }
 
     /*SECTION MIDLE*/
@@ -301,6 +312,7 @@
         background: #844685;
         text-align: center;
         border: 0;
+        outline: none;
 
         font-family: 'Roboto' sans-serif;
         font-style: normal;
