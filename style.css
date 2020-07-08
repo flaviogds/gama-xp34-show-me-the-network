@@ -360,6 +360,101 @@
     }
 
 }
+@media(max-width: 400px){
+    .cont-event{
+        margin: auto;
+        padding: 5vw 22.5vw 5vw 22.5vw;
+    }
+    .event{
+        width: 55vw;
+        height: 10vw;
+        font-size: 5vw;
+    }
+    .cont-timer{
+        margin: auto;
+        padding: 0 28vw 5vw 28vw;
+    }
+    .timer-box{
+        font-size: 4.8vw;
+        font-weight: bold;
+    }
+    .cont-button{
+        margin: auto;
+        margin-bottom: 2vw;
+        padding: 0 25vw 5vw 25vw;
+    }
+    .btn-int{
+        height: 30px;
+        width: 47vw;
+        font-size: 14px;
+    }
+
+    .row{
+        margin: auto;
+        padding: 0 4vw 2vw 4vw;
+    }
+    .col-md-6{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        }
+    .sub-midle{
+        padding: 6vw 4vw 5vw 4vw;
+        font-size: 4.8vw;
+    }
+    .baloom-box{
+        align-items: center;
+        width: 300px;
+    }
+    .baloom{
+        border-radius: 100%;
+        width: 200px;
+    }
+    .border{
+        border-radius: 100%;
+        margin: 0 0 33.75px 47px;
+        padding-bottom: 0.25vw;
+        width: 206px;
+        background: #FFFFFF;
+    }
+    .sub-bio{
+        width: 300px;
+        height: 30px;
+        padding-top: 8px;
+        font-size:16px;
+    }
+    .text-bio{
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .submit-box{
+        width: 300px;
+    }
+    .invite{
+        max-width: 300px;
+        font-size: 22px;
+    }
+    .form{
+        margin: 0;
+        padding: 0;
+    }
+    .label{
+        width: 300px;
+        font-size: 14px;
+    }
+    .input{
+        width: 100px;
+        font-size: 14px;
+        height: 30px;
+    }
+    .btn-input{
+        height: 30px;
+        width: 47vw;
+        font-size: 14px;
+    }
+}
 @media(max-width: 375px){
     .cont-event{
         margin: auto;
