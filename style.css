@@ -119,7 +119,13 @@
 }
 .baloom-box{
     align-items: center;
-    width: 40vw;
+    width: auto;
+}
+.col-md-6{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .baloom{
     border-radius: 100%;
@@ -224,31 +230,49 @@
         padding: 2vw 1vw 8vw 1vw;
         margin-top: 7.5vw;
     }
+    .cont-button {
+        padding-left: 30.5vw;
+        padding-right: 30.5vw;
+    }
+    .cont-timer {
+        padding-right: 27vw;
+        padding-left: 27vw;
+    }
+    .btn-int{
+        height: 40px;
+        width: 300px;
+        margin-top: 2vw;
+        font-size: 18px;
+    }    
     .row{
         margin: auto;
         padding: 0 4.5vw 2vw 4.5vw;
     }
     .baloom-box{
-        width: 35vw;
-        margin: 0 5vw 0 5vw;
+        width: auto;
+    }
+    .col-md-6{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .baloom{
         width: 26.5vw;
     }
     .border{
-        margin: 0 0 9vw 6.6vw;
+        margin: 0 0 9vw 4.8vw;
         padding-bottom: 0.25vw;
         width: 27.8vw;
     }
     .sub-bio{
-        width: 35vw;
+        width: 320px;
         height: 5.8vw;
-
+        padding-top: 6px;
         font-size: 2.6vw;
     }
     .text-bio{
-        width: 35vw;
-
+        width: 320px;
         font-size: 2.2vw;
     }
     .submit-box{
@@ -274,89 +298,86 @@
     }
     .btn-input{
         height: 40px;
-        width: 450px;
+        width: 45vw;
         margin-top: 2vw;
         font-size: 18px;
     }
 
 }
-@media(max-width: 480px){
-    /*SECTION FRONT*/
-    .sub-box{
-        padding: 2vw 8vw 0 8vw;
-        font-size: 16px;
+@media(max-width: 540px){
+    .cont-timer {
+        padding-left: 26.5vw;
+        padding-right: 26.5vw;
+    }
+    .event{
+        height: 8vw;
     }
     .cont-button{
         margin: auto;
         margin-bottom: 2vw;
-        padding: 0 29.25vw 5vw 29.25vw;
+        padding: 0 26.5vw 5vw 26.5vw;
     }
     .btn-int{
-        height: 40px;
-        width: 28.2vw;
-        min-width: 200px;
-        font-size: 14px;
-
+        font-size: 18px;
     }
-    /*SECTION MIDLE*/
-    .row{
-        margin: auto;
-        padding: 0 16vw 2vw 16vw;
-    }
-    .sub-midle{
-        padding: 6vw 4vw 5vw 4vw;
-        font-size: 16px;
-    }
-    .baloom-box{
-        align-items: center;
-        width: 40vw;
-    }
-    .baloom{
-        width: 30vw;
+    .col-md-6{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .border{
-        border-radius: 100%;
-        margin: 0 0 9vw 15.6vw;
-        padding-bottom: 0.25vw;
-        width: 30vw;
-        background: #FFFFFF;
+        margin: 0 0 9vw 3.65vw;
     }
-    .sub-bio{
-        width: 60vw;
-        height: 6.0vw;
-        min-width: 200px;
-        min-height: 40px;
-        padding-top: 6px;
-        font-size: 18px;
-    }
-    .text-bio{
-        width: 60vw;
-        font-size: 16px;
-    }
-
-    /*SECTION END*/
-
     .submit-box{
-        margin: auto;
-        width: 200px;
-    }
-    .invite{
-        width: 200px;
-        font-size: 18px;
-    }
-    .label{
-        width: 150px;
-        font-size: 14px;
-    }
-    .input{
-        width: 150px;
-        font-size: 14px;
-        height: 30px;
+        width: 300px;
     }
     .btn-input{
+        height: 40px;
+        width: 300px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 480px){
+    .cont-event{
+        margin: auto;
+        padding: 5vw 22.5vw 5vw 22.5vw;
+    }
+    .event{
+        width: 55vw;
+        height: 11vw;
+        font-size: 5vw;
+    }
+    .cont-timer{
+        margin: auto;
+        padding: 0 28vw 5vw 28vw;
+    }
+    .timer-box{
+        font-size: 4.8vw;
+        font-weight: bold;
+    }
+    .cont-button{
+        margin: auto;
+        margin-bottom: 2vw;
+        padding: 0 26.5vw 5vw 26.5vw;
+    }
+    .btn-int{
         height: 30px;
-        width: 150px;
-        font-size: 16px;
+        width: 47vw;
+        font-size: 14px;
+    }
+    .baloom-box{
+        width: auto;
+    }
+    .col-md-6{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .submit-box{
+        width: 300px;
     }
 
 }
@@ -378,6 +399,16 @@
         font-size: 4.8vw;
         font-weight: bold;
     }
+    .baloom-box{
+        width: auto;
+    }
+    .col-md-6{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
     .cont-button{
         margin: auto;
         margin-bottom: 2vw;
@@ -389,71 +420,6 @@
         font-size: 14px;
     }
 
-    .row{
-        margin: auto;
-        padding: 0 4vw 2vw 4vw;
-    }
-    .col-md-6{
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 0px;
-        padding-right: 0px;
-        }
-    .sub-midle{
-        padding: 6vw 4vw 5vw 4vw;
-        font-size: 4.8vw;
-    }
-    .baloom-box{
-        align-items: center;
-        width: 300px;
-    }
-    .baloom{
-        border-radius: 100%;
-        width: 200px;
-    }
-    .border{
-        border-radius: 100%;
-        margin: 0 0 33.75px 47px;
-        padding-bottom: 0.25vw;
-        width: 206px;
-        background: #FFFFFF;
-    }
-    .sub-bio{
-        width: 300px;
-        height: 30px;
-        padding-top: 8px;
-        font-size:16px;
-    }
-    .text-bio{
-        width: 300px;
-        font-size: 14px;
-    }
-
-    .submit-box{
-        width: 300px;
-    }
-    .invite{
-        max-width: 300px;
-        font-size: 22px;
-    }
-    .form{
-        margin: 0;
-        padding: 0;
-    }
-    .label{
-        width: 300px;
-        font-size: 14px;
-    }
-    .input{
-        width: 100px;
-        font-size: 14px;
-        height: 30px;
-    }
-    .btn-input{
-        height: 30px;
-        width: 47vw;
-        font-size: 14px;
-    }
 }
 @media(max-width: 375px){
     .cont-event{
