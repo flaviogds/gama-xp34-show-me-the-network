@@ -8,7 +8,7 @@
     outline: none;
     z-index: 10;
     background-color: #551A58;;
-    width: 500px;
+    width: 600px;
     max-width: 80%;
 }
 
@@ -21,11 +21,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border: none;
 }
 
 .modal-header .title {
-    padding-top: 5px;
+    padding-top: 10px;
     height: 4rem;
 }
 
@@ -37,11 +37,80 @@
     color: white;
     font-size: 1.25rem;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .modal-body {
     padding: 10px 38px;
     color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 130%;
+}
+
+.modal-body p {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 130%;
+}
+
+table {
+    max-width: 250px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 5%;
+    font-family: Roboto;
+}
+
+caption {
+    text-align: center;
+    background-color: #F3C623;;
+    color: #551A58;
+    outline: none;
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 130%;
+}
+
+th, td {
+    text-align: center;
+    width: 33%;
+}
+
+th {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 130%;
+
+    letter-spacing: 0.04em;
+}
+
+td {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 130%;
+    text-align: center;
+}
+
+#modal-leave {
+    border: 1px solid white;
+    width: 100%;
+    background-color: #551A58;
+    color: white;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: bold;
 }
 
 #overlay {
