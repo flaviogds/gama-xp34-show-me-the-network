@@ -5,7 +5,9 @@
     <meta content="text/html" charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Dica de GUERREIRA</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+
 
     <link rel="stylesheet" href="node_modules/bootstrap/compile/bootstrap.css">
     <link rel="stylesheet" href="style.css">
@@ -18,17 +20,25 @@
 
 </head>
 
-<body>
+<body style="font-size: 62.5%;">
     <nav></nav>
 
     <section>
         <div class="banner">
-            <img class="logo" src="images/logo.png" />
-            <h1 class="title">Meetup Guerreiras do Empreendedorismo</h1>
+            <img class="logo" src="images/logo.png" alt="#dicadeguerreira"/>
+            <div class="container"><h1 class="title">Meetup Guerreiras do Empreendedorismo</h1></div>
         </div>
+
+        <div class="cont-event"><h2 class="event">O evento começa em </h2></div>
+
+        <div class="cont-timer"><div id="timer" class="timer-box"></div></div>    
+
+        <div class="cont-button"><a href="#register"><button class="btn-int">QUERO FAZER PARTE</button></a></div>
+
         <div>
             <h2 class="sub-title">
-                Empoderamento e <mark class="contrast">empreendedorismo feminino</mark> em cenários adversos</h2>
+                Empoderamento e <mark class="contrast">empreendedorismo feminino</mark> em cenários adversos
+            </h2>
             <div>
                 <p class="sub-box">
                     Um meetup com o assunto que você estava esperando, voltado para suas expectativas
@@ -57,11 +67,6 @@
                 </p>
             </div>
         </div>
-        <div>
-            <h2 class="event">O evento começa em </h2>
-            <div id="timer" class="timer-box"></div>
-        </div>
-        <a href="#register"><button class="btn-int">QUERO FAZER PARTE</button></a>
 
     </section>
 
@@ -69,8 +74,8 @@
         <h3 class="sub-midle">Palestrantes</h3>
         <div class="row">
 
-            <div class="col-md-3 baloom-box">
-                <div class="border"><img class="baloom" src="images/person-thayo.png"></div>
+            <div class="col-md-6 float-left baloom-box">
+                <div class="border"><img class="baloom" src="images/person-thayo.png" alt="foto Thayo Amaral"></div>
                 <h3 class="sub-bio">Thayô Amaral</h3>
                 <p class="text-bio">
                     Certificada em Branding, Marketing de Conteúdo, Produção de Conteúdo e
@@ -84,8 +89,8 @@
                 </p>
             </div>
             
-            <div class="col-md-3 baloom-box">
-                <div class="border"><img class="baloom" src="images/person-soraia.png"></div>
+            <div class="col-md-6 float-right baloom-box">
+                <div class="border"><img class="baloom" src="images/person-soraia.png" alt="foto Soraia Gomes"></div>
                 <h3 class="sub-bio">Soraia Gomes</h3>
                 <p class="text-bio">
                     Mestre em Engenharia de Produção (Puc-GO), MBA em Gestão Empresarial (FGV),
@@ -93,7 +98,7 @@
                     Gestão.
                 </p>
                 <p class="text-bio">
-                    Há 24 anos na área industrialindustrial, atuando como executiva em empresas de
+                    Há 24 anos na área industrial, atuando como executiva em empresas de
                     grande porte, como SOUZA CRUZ, ALLIED DOMECQ, UNILEVER, HYPERA e KRAFT HEINZ, com sólida
                     experiência nas áreas da qualidade, meio ambiente, projetos, pesquisa e desenvolvimento e
                     produção.
@@ -102,9 +107,10 @@
                     Atualmente, diretora da SHEQ Consultoria e Treinamento e professora da Educon FGV.
                 </p>
             </div>
-
-            <div class="col-md-3 baloom-box">
-                <div class="border"><img class="baloom" src="images/person-renata.png"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 float-left baloom-box">
+                <div class="border"><img class="baloom" src="images/person-renata.png" alt="foto Renata Guimaraes"></div>
                 <h3 class="sub-bio">Renata Guimarães</h3>
                 <p class="text-bio">
                     Graduada em Publicidade e Propaganda e Relações Públicas pela UFMG, integra o time da Ambev há 11
@@ -113,8 +119,8 @@
                 </p>
             </div>
 
-            <div class="col-md-3 baloom-box">
-                <div class="border"><img class="baloom" src="images/person-thayany.png"></div>
+            <div class="col-md-6 float-right baloom-box">
+                <div class="border"><img class="baloom" src="images/person-thayany.png" alt="foto Thayany Ferregutti"></div>
                 <h3 class="sub-bio">Thayany Ferregutti</h3>
                 <p class="text-bio">
                     Consultora de Vendas da Shell Especialista em desenvolvimento e reprogramação da
@@ -125,15 +131,14 @@
 
                 </p>
             </div>
-
         </div>
     </section>
 
     <section id="register" style="height: 640px;">
 
         <div class="submit-box">
-            <h3 class="invite">Inscreva-se</h3>
-            <form class="form">
+            <div>
+                <h3 class="invite">Inscreva-se</h3>
 
                 <p id="fail-nome" class="label">Nome Completo</p>
                 <input class="input" type="text" placeholder="nome" id="nome" pattern="^\D{2,}\s[\D\s]{2,}$" required />
@@ -142,7 +147,7 @@
                 <input class="input" type="email" placeholder="seu-email@email.com" id="email" required />
 
                 <input class="btn-input" type="button" onclick="addData()" value="QUERO FAZER PARTE" />
-            </form>
+            </div>
         </div>
 
     </section>
