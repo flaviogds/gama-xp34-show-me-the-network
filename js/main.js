@@ -59,7 +59,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "AGORA!";
+    document.getElementById("timer").innerHTML = " <a class='cont-btn' href='https://www.youtube.com/watch?v=bI73Jv5aEZY'>AGORA!</a>";
   }
 }, 1000);
 
