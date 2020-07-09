@@ -1,4 +1,27 @@
 /*SECTION FRONT*/
+.event-now{
+    margin: 2vw auto 2vw auto;
+}
+.meetup{
+    margin: auto;
+    padding: 0 25vw 0 25vw;
+    font-size: 4.8vw;
+    font-weight: bold;
+    background-color: #F3C623;
+}
+.btn-event{
+    margin: 2vw auto 2vw auto;
+    padding: 0 25vw 0 25vw;
+    font-size: 4.2vw;
+    font-weight: bold;
+    border: 0;
+    color: #FFFFFF;
+    background-color: #844685;;
+}
+.cont-btn{
+    padding: 0 16vw 0 16vw;
+    color: black;
+}
 
 .cont-event{
     margin: auto;
