@@ -47,7 +47,8 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = days + " dia " + hours + "h " + minutes + "min " + seconds+"s";
   }
   if (days < 1) {
-    document.getElementById("timer").innerHTML = hours + "h " + minutes + "min " + seconds+"s";
+    document.getElementById("timer").innerHTML = hours + "h " + minutes + "min " + seconds + "s";
+    document.getElementById("timer-button-element").innerHTML = "Clique Aqui e ASSISTA!";
   }
 
   var totalHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -60,6 +61,8 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "AGORA!";
+    document.getElementById("timer-a-element").href = "https://www.youtube.com/watch?v=bI73Jv5aEZY";
+    document.getElementById("timer-button-element").innerHTML = "Clique Aqui e ASSISTA!";
   }
 }, 1000);
 
