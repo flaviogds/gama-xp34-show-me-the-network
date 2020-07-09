@@ -1,5 +1,5 @@
 var nome="";
-var email="";
+var email = "";
 
 function addData() {
 
@@ -49,9 +49,49 @@ var x = setInterval(function() {
   if (days < 1) {
     document.getElementById("timer").innerHTML = hours + "h " + minutes + "min " + seconds+"s";
   }
+
+  var totalHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+  document.getElementById("hours").innerHTML = totalHours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "AGORA!";
   }
 }, 1000);
+
+/* Exit Intent Pop Up */
+
+const popUpModal = document.querySelector('.modal-custom')
+const closeModalButtons = document.querySelectorAll('[data-close-custom-button]');
+const overlay = document.getElementById('overlay-custom'); 
+var hasOpened = false;
+
+document.addEventListener('mouseleave', () => {
+  openModal(popUpModal);
+});
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal-custom');
+    closeModal(modal);
+  });
+});
+
+function openModal(modal) {
+  if (!hasOpened) {
+    if (modal == null) { console.log(modal); return; }
+    modal.classList.add('active');
+    overlay.classList.add('active');
+    hasOpened = true;
+  }
+}
+
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+}
