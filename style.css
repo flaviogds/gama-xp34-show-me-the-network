@@ -519,7 +519,7 @@
 
 /* Exit Intent Pop Up */
 
-.modal {
+.modal-custom {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -533,11 +533,11 @@
     max-width: 80%;
 }
 
-.modal.active {
+.modal-custom.active {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-header {
+.modal-header-custom {
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
@@ -545,12 +545,12 @@
     border: none;
 }
 
-.modal-header .title {
+.modal-header-custom .title-pop-up-custom {
     padding-top: 10px;
     height: 4rem;
 }
 
-.modal-header .close-button {
+.modal-header-custom .close-button-custom {
     cursor: pointer;
     border: none;
     outline: none;
@@ -561,7 +561,7 @@
     padding-bottom: 20px;
 }
 
-.modal-body {
+.modal-body-custom {
     padding: 10px 38px;
     color: white;
     font-family: Roboto;
@@ -571,7 +571,7 @@
     line-height: 130%;
 }
 
-.modal-body p {
+.modal-body-custom p {
     font-weight: normal;
     font-size: 1rem;
     line-height: 130%;
@@ -587,6 +587,7 @@ table {
 }
 
 caption {
+    caption-side: top;
     text-align: center;
     background-color: #F3C623;;
     color: #551A58;
@@ -621,7 +622,7 @@ td {
     text-align: center;
 }
 
-#modal-leave {
+#modal-leave-custom {
     border: 1px solid white;
     width: 100%;
     background-color: #551A58;
@@ -634,7 +635,7 @@ td {
     font-weight: bold;
 }
 
-#overlay {
+#overlay-custom {
     position: fixed;
     opacity: 0;
     transition: 200ms ease-in-out;
@@ -646,7 +647,7 @@ td {
     pointer-events: none;
 }
 
-#overlay.active {
+#overlay-custom.active {
     pointer-events: all;
     opacity: 1;
 }
