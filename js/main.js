@@ -1,46 +1,5 @@
-var httpRequest="";
 var nome="";
 var email = "";
-
-function fazerRequisicao(){
-
-  var destino="evento";
-  var url="event.html";
-
-  if(window.XMLHttpRequest){
-      httpRequest = new XMLHttpRequest();
-  }
-  else if(window.ActiveXObject){
-      try{
-          httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
-      }
-      catch(e){
-          try{
-              httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
-          }
-          catch(e){
-              alert("Impossível instanciar o objeto XMLHttpRequest para esse navegador/versão");
-          }
-      }
-  }
-  if(!httpRequest){
-      alert("Erro ao tentar criar uma instância do objeto XMLHttpRequest");
-      return false;
-  }
-  httpRequest.onreadystatechange = situacaoRequisicao;
-  
-  httpRequest.open("GET", url);
-  httpRequest.send();
-}
-
-function situacaoRequisicao(){
-  if(httpRequest.readyState == 4){
-      if(httpRSSL_OP_DONT_INSERT_EMPTY_FRAGMENTSequest.status == 200){
-          document.getElementById(destino).innerHTML = httpRequest.responseText;
-      }
-  }
-}
-
 
 function addData() {
 
@@ -87,9 +46,8 @@ var x = setInterval(function() {
   if(days == 1){
     document.getElementById("timer").innerHTML = days + " dia " + hours + "h " + minutes + "min " + seconds+"s";
   }
-  if (days < 1) {
-    document.getElementById("timer").innerHTML = "Agora!!!";
-    document.getElementById("timer-button-element").innerHTML = "Clique AQUI e ASSISTA!";
+  if (days < 1 && days > 0) {
+    document.getElementById("timer").innerHTML = hours + "h " + minutes + "min " + seconds+"s";
   }
 
   var totalHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -101,8 +59,9 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("data-evento").innerHTML = "<h2 class='event'>Assista o meetup em </h2>"
-    document.getElementById("timer").innerHTML = "<center><a class='cont-btn' href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>YouTube</button></a></center>"
+    document.getElementById("timer-button-element").innerHTML = "Clique AQUI e ASSISTA!";
+    document.getElementById("data-evento").innerHTML = "<h2 class='event'>Assista o meetup em </h2>";
+    document.getElementById("timer").innerHTML = "<center><a class='cont-btn' href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>YouTube</button></a></center>";
   }
 }, 1000);
 
