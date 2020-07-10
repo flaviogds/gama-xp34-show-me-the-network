@@ -208,9 +208,8 @@
 }
 .input{
     width: 45vw;
-    min-height: 30px;
     min-width: 300px;
-    font-size: 12px;
+    font-size: 1.6vw;
     height: 4vw;
 }
 .btn-input{
