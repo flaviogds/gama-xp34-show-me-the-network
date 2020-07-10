@@ -100,7 +100,8 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "<center><a class='cont-btn' href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>Ao vivo no YouTube</button></a></center>"
+    document.getElementById("data-evento").innerHTML = "<h2 class='event'>Assista o meetup em </h2>"
+    document.getElementById("timer").innerHTML = "<center><a class='cont-btn' href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>YouTube</button></a></center>"
   }
 }, 1000);
 
