@@ -23,6 +23,7 @@ function addData() {
 
 // Set the date we're counting down to
 var countDownDate = new Date("Jul 9, 2020 19:00:00").getTime();
+var finalEvent = new Date("Jul 9, 2020 21:10:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -39,30 +40,27 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="countdown_timer"
-  if(days > 1){
-    document.getElementById("timer").innerHTML = days + " dias " + hours + "h " + minutes + "min " + seconds+"s";
-  }
-  if(days == 1){
-    document.getElementById("timer").innerHTML = days + " dia " + hours + "h " + minutes + "min " + seconds+"s";
-  }
-  if (days < 1 && days > 0) {
-    document.getElementById("timer").innerHTML = hours + "h " + minutes + "min " + seconds+"s";
-  }
-
   var totalHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-  document.getElementById("hours").innerHTML = totalHours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+  // Display the result in the element with id="countdown_timer"
+  if(distance > 0){
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+  }
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer-button-element").innerHTML = "Clique AQUI e ASSISTA!";
-    document.getElementById("data-evento").innerHTML = "<h2 class='event'>Assista o meetup em </h2>";
-    document.getElementById("timer").innerHTML = "<center><a class='cont-btn' href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>YouTube</button></a></center>";
+    if(now<finalEvent){
+      document.getElementById("evento").innerHTML = "<div class='event-now'><p class='meetup'>Meetup começa agora</p></div><center class='cont-btn'><a href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>YouTube</button></a></center>";
+    }
+    if(now>finalEvent){
+      document.getElementById("evento").innerHTML = "<div class='cont-event' id='data-evento'><h2 class='event'>Assista o meetup em </h2></div><center class='cont-btn'><a href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>YouTube</button></a></center>";
+    }
   }
+
 }, 1000);
 
 /* Exit Intent Pop Up */

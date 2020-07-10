@@ -17,6 +17,7 @@
     background-color: #844685;;
 }
 .cont-btn{
+    margin-bottom: 2vw;
     color: black;
 }
 
@@ -41,7 +42,9 @@
 .cont-timer{
     margin: auto;
     padding: 0 27.5vw 5vw 27.5vw;
+    color: black;
 }
+
 .timer-box{
     font-size: 5vw;
     font-weight: bold;
@@ -637,7 +640,8 @@ th {
     font-style: normal;
     font-weight: normal;
     line-height: 130%;
-
+    text-align: center;
+    width: 33%;
     letter-spacing: 0.04em;
 }
 
@@ -647,6 +651,8 @@ td {
     font-weight: bold;
     line-height: 130%;
     text-align: center;
+    text-align: center;
+    width: 33%;
 }
 
 #modal-leave-custom {

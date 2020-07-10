@@ -25,23 +25,37 @@
 
     <section>
         <div class="banner">
-            <img class="logo" src="images/logo.png" alt="#dicadeguerreira"/>
-            <div class="banner-text-background"><h1 class="title">Meetup Guerreiras do Empreendedorismo</h1></div>
-        </div>
-        
-        <div>
-            <div class="cont-event" id="data-evento"><h2 class='event'>Assista o meetup em </h2></div>
-            <div class="cont-timer"><center><a class='cont-btn' href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>YouTube</button></a></center></div>    
-            <div class="cont-button"><a href="#register"><button class="btn-int">QUERO FAZER PARTE</button></a></div>
+            <img class="logo" src="images/logo.png" alt="#dicadeguerreira" />
+            <div class="banner-text-background">
+                <h1 class="title">Meetup Guerreiras do Empreendedorismo</h1>
+            </div>
         </div>
 
-        <!--
-        <div>
-            <div class="cont-event" id="data-evento"><h2 class="event">O evento começa em </h2></div>
-            <div class="cont-timer"><div id="timer" class="timer-box"></div></div>    
-            <div class="cont-button"><a href="#register"><button class="btn-int">QUERO FAZER PARTE</button></a></div>
+        <div id="evento">
+            <div class="cont-event">
+                <h2 class="event">O evento começa em </h2>
+            </div>
+
+            <div id="timer" class="cont-timer">
+                <table   class="cont-timer">
+                    <tr>
+                        <th class="th-page">Dias</th>
+                        <th class="th-page">horas</th>
+                        <th class="th-page">min</th>
+                        <th class="th-page">seg</th>
+                    </tr>
+                    <tr>
+                        <td class="th-page" id="days">00</td>
+                        <td class="th-page" id="hours">00</td>
+                        <td class="th-page" id="minutes">00</td>
+                        <td class="th-page" id="seconds">00</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        -->
+
+        <div class="cont-button"><a href="#register"><button class="btn-int">QUERO FAZER PARTE</button></a></div>
+
 
         <div>
             <h2 class="sub-title">
@@ -96,7 +110,7 @@
                     hoje dirige a Otus Agência Digital ao lado de Anny Fernandes.
                 </p>
             </div>
-            
+
             <div class="col-md-6 float-right baloom-box">
                 <div class="border"><img class="baloom" src="images/person-soraia.png" alt="foto Soraia Gomes"></div>
                 <h3 class="sub-bio">Soraia Gomes</h3>
@@ -118,7 +132,8 @@
         </div>
         <div class="row">
             <div class="col-md-6 float-left baloom-box">
-                <div class="border"><img class="baloom" src="images/person-renata.png" alt="foto Renata Guimaraes"></div>
+                <div class="border"><img class="baloom" src="images/person-renata.png" alt="foto Renata Guimaraes">
+                </div>
                 <h3 class="sub-bio">Renata Guimarães</h3>
                 <p class="text-bio">
                     Graduada em Publicidade e Propaganda e Relações Públicas pela UFMG, integra o time da Ambev há 11
@@ -128,7 +143,8 @@
             </div>
 
             <div class="col-md-6 float-right baloom-box">
-                <div class="border"><img class="baloom" src="images/person-thayany.png" alt="foto Thayany Ferregutti"></div>
+                <div class="border"><img class="baloom" src="images/person-thayany.png" alt="foto Thayany Ferregutti">
+                </div>
                 <h3 class="sub-bio">Thaiany Ferregutti</h3>
                 <p class="text-bio">
                     Consultora de Vendas da Shell Especialista em desenvolvimento e reprogramação da
@@ -162,8 +178,38 @@
 
     <!-- Exit Intent Pop Up -->
     <div class="modal-custom" id="modal-custom">
+    <!--
         <div class="modal-header-custom">
             <div class="title-pop-up-custom"><img class="title-pop-up-custom" src="images/logo-white.png" alt="Dica de Guerreira"></div>
+            <button data-close-custom-button class="close-button-custom">&times;</button>
+        </div>
+        <div class="modal-body-custom">
+            Você quer mesmo deixar um evento voltado para empreendedorismo feminino passar?
+            <p>Não deixe passar, o “Meetup Guerreiras do Empreendedorismo”, um evento inteiramente online 
+                voltado para mulheres empreendedoras e guerreiras!</p>
+        </div>
+        <table>
+            <caption>O evento começa em</caption>
+            <tr>
+                <th>horas</th>
+                <th>min</th>
+                <th>seg</th>
+            </tr>
+            <tr>
+                <td id="hours">00</td>
+                <td id="minutes">00</td>
+                <td id="seconds">00</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <a href="#register"><button data-close-custom-button id="modal-leave-custom">VOU PARTICIPAR!</button></a>
+                </td>
+            </tr>
+        </table>
+    -->
+        <div class="modal-header-custom">
+            <div class="title-pop-up-custom"><img class="title-pop-up-custom" src="images/logo-white.png"
+                    alt="Dica de Guerreira"></div>
             <button data-close-custom-button class="close-button-custom">&times;</button>
         </div>
         <div class="modal-body-custom">
@@ -172,7 +218,8 @@
         <table>
             <tr>
                 <td colspan="3">
-                    <a href="https://www.youtube.com/watch?v=bI73Jv5aEZY"><button data-close-custom-button id="modal-leave-custom">Quero Assistir!</button></a>
+                    <a href="https://www.youtube.com/watch?v=bI73Jv5aEZY"><button data-close-custom-button
+                            id="modal-leave-custom">Quero Assistir!</button></a>
                 </td>
             </tr>
         </table>
