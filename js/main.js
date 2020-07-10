@@ -88,7 +88,8 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = days + " dia " + hours + "h " + minutes + "min " + seconds+"s";
   }
   if (days < 1) {
-    document.getElementById("timer").innerHTML = hours + "h " + minutes + "min " + seconds+"s";
+    document.getElementById("timer").innerHTML = "Agora!!!";
+    document.getElementById("timer-button-element").innerHTML = "Clique AQUI e ASSISTA!";
   }
 
   var totalHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
