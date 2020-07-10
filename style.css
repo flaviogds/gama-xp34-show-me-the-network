@@ -10,8 +10,6 @@
     background-color: #F3C623;
 }
 .btn-event{
-    margin: 2vw auto 2vw auto;
-    padding: 0 25vw 0 25vw;
     font-size: 4.2vw;
     font-weight: bold;
     border: 0;
@@ -19,7 +17,6 @@
     background-color: #844685;;
 }
 .cont-btn{
-    padding: 0 16vw 0 16vw;
     color: black;
 }
 
