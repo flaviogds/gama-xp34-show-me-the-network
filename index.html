@@ -9,7 +9,8 @@
     <link rel="icon" type="image/x-icon" href="images/icon.png">
 
 
-    <link rel="stylesheet" href="node_modules/bootstrap/compile/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
     <link
@@ -23,7 +24,7 @@
 <body style="font-size: 62.5%;">
     <nav></nav>
 
-    <section>
+    <section class="section">
         <div class="banner">
             <img class="logo" src="images/logo.png" alt="#dicadeguerreira" />
             <div class="banner-text-background">
@@ -32,34 +33,50 @@
         </div>
 
         <div id="evento">
-            <div class="cont-event">
-                <h2 class="event">O evento começa em </h2>
+            <div class="event">
+                <center>
+                    <h2 class="event-text">O evento começa em </h2>
+                </center>
             </div>
 
-            <div id="timer" class="cont-timer">
-                <table   class="cont-timer">
-                    <tr>
-                        <th class="th-page">Dias</th>
-                        <th class="th-page">horas</th>
-                        <th class="th-page">min</th>
-                        <th class="th-page">seg</th>
-                    </tr>
-                    <tr>
-                        <td class="th-page" id="days">00</td>
-                        <td class="th-page" id="hours">00</td>
-                        <td class="th-page" id="minutes">00</td>
-                        <td class="th-page" id="seconds">00</td>
-                    </tr>
-                </table>
+            <div id="timer">
+                <center>
+                    <table class="event-text">
+                        <tr class="timer-head">
+                            <th class="cell-size">dias</th>
+                            <td class="cell-size"></td>
+                            <th class="cell-size">horas</th>
+                            <td class="cell-size"></td>
+                            <th class="cell-size">min</th>
+                            <td class="cell-size"></td>
+                            <th class="cell-size">seg</th>
+                        </tr>
+                        <tr class="timer-body">
+                            <td class="cell-size" id="days">00</td>
+                            <td class="cell-size"></td>
+                            <td class="cell-size" id="hours">00</td>
+                            <td class="cell-size">:</td>
+                            <td class="cell-size" id="minutes">00</td>
+                            <td class="cell-size">:</td>
+                            <td class="cell-size" id="seconds">00</td>
+                        </tr>
+                    </table>
+                </center>
             </div>
         </div>
 
-        <div class="cont-button"><a href="#register"><button class="btn-int">QUERO FAZER PARTE</button></a></div>
+        <div>
+            <center>
+                <a href="#register">
+                    <button class="button">QUERO FAZER PARTE</button>
+                </a>
+            </center>
+        </div>
 
 
         <div>
             <h2 class="sub-title">
-                Empoderamento e <mark class="contrast">empreendedorismo feminino</mark> em cenários adversos
+                Empoderamento e <em class="contrast">empreendedorismo feminino</em> em cenários adversos
             </h2>
             <div>
                 <p class="sub-box">
@@ -92,85 +109,108 @@
 
     </section>
 
-    <section class="bg-midle">
+    <section class="section bg-midle">
         <h3 class="sub-midle">Palestrantes</h3>
-        <div class="row">
 
-            <div class="col-md-6 float-left baloom-box">
-                <div class="border"><img class="baloom" src="images/person-thayo.png" alt="foto Thayo Amaral"></div>
-                <h3 class="sub-bio">Thayô Amaral</h3>
-                <p class="text-bio">
-                    Certificada em Branding, Marketing de Conteúdo, Produção de Conteúdo e
-                    Inbound Marketing pela Rock Content. Em Social Branding pelo Coletivo Centopeia, e
-                    Gestão de Marketing Digital e Redes Sociais pela Gestor de Marketing.
-                </p>
-                <p class="text-bio">
-                    Atuante no mercado de Marketing Digital desde 2013, tendo passado por 7
-                    agências de comunicação e atendido ao todo mais de 40 clientes de diferentes mercados,
-                    hoje dirige a Otus Agência Digital ao lado de Anny Fernandes.
-                </p>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-img-top">
+                    <div class="border">
+                        <img class="baloom" src="images/person-thayo.png" alt="foto Thayo Amaral">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title sub-bio">Thayô Amaral</h3>
+                    <p class="card-text text-bio">
+                        Certificada em Branding, Marketing de Conteúdo, Produção de Conteúdo e
+                        Inbound Marketing pela Rock Content. Em Social Branding pelo Coletivo Centopeia, e
+                        Gestão de Marketing Digital e Redes Sociais pela Gestor de Marketing.
+                    </p>
+                    <p class="card-text text-bio">
+                        Atuante no mercado de Marketing Digital desde 2013, tendo passado por 7
+                        agências de comunicação e atendido ao todo mais de 40 clientes de diferentes mercados,
+                        hoje dirige a Otus Agência Digital ao lado de Anny Fernandes.
+                    </p>
+                </div>
             </div>
 
-            <div class="col-md-6 float-right baloom-box">
-                <div class="border"><img class="baloom" src="images/person-soraia.png" alt="foto Soraia Gomes"></div>
-                <h3 class="sub-bio">Soraia Gomes</h3>
-                <p class="text-bio">
-                    Mestre em Engenharia de Produção (Puc-GO), MBA em Gestão Empresarial (FGV),
-                    Engenharia Química (UFRJ), Black Belt e Auditoria Líder de Sistemas Integrados de
-                    Gestão.
-                </p>
-                <p class="text-bio">
-                    Há 24 anos na área industrial, atuando como executiva em empresas de
-                    grande porte, como SOUZA CRUZ, ALLIED DOMECQ, UNILEVER, HYPERA e KRAFT HEINZ, com sólida
-                    experiência nas áreas da qualidade, meio ambiente, projetos, pesquisa e desenvolvimento e
-                    produção.
-                </p>
-                <p class="text-bio">
-                    Atualmente, diretora da SHEQ Consultoria e Treinamento e professora da Educon FGV.
-                </p>
+            <div class="card">
+                <div class="card-img-top">
+                    <div class="border">
+                        <img class="baloom" src="images/person-soraia.png" alt="foto Soraia Gomes">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title sub-bio">Soraia Gomes</h5>
+                    <p class="card-text text-bio">
+                        Mestre em Engenharia de Produção (Puc-GO), MBA em Gestão Empresarial (FGV),
+                        Engenharia Química (UFRJ), Black Belt e Auditoria Líder de Sistemas Integrados de
+                        Gestão.
+                    </p>
+                    <p class="card-text text-bio">
+                        Há 24 anos na área industrial, atuando como executiva em empresas de
+                        grande porte, como SOUZA CRUZ, ALLIED DOMECQ, UNILEVER, HYPERA e KRAFT HEINZ, com sólida
+                        experiência nas áreas da qualidade, meio ambiente, projetos, pesquisa e desenvolvimento e
+                        produção.
+                    </p>
+                    <p class="card-text text-bio">Atualmente, diretora da SHEQ Consultoria e Treinamento e professora da Educon
+                        FGV.</p>
+                </div>
+            </div>
+        </div>>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-img-top">
+                    <div class="border">
+                        <img class="baloom" src="images/person-renata.png" alt="foto Renata Guimaraes">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title sub-bio">Renata Guimarães</h5>
+                    <p class="card-text text-bio">
+                        Graduada em Publicidade e Propaganda e Relações Públicas pela UFMG, integra o time da Ambev há
+                        11
+                        anos. Tem trajetória dedicada à área de Gente & Gestão, onde começou como Estagiária em 2002.
+                        Atualmente é Head de Tech People & Transformation para a América do Sul.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-top">
+                    <div class="border">
+                        <img class="baloom" src="images/person-thayany.png" alt="foto Thayany Ferregutti">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title sub-bio">Thaiany Ferregutti</h5>
+                    <p class="card-text text-bio">
+                        Consultora de Vendas da Shell Especialista em desenvolvimento e reprogramação da
+                        mente humana Mentora, Terapeuta e Instrutora Internacional de Thetahealing, com mais de
+                        20 cursos na área. Terapeuta multidimensional.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 float-left baloom-box">
-                <div class="border"><img class="baloom" src="images/person-renata.png" alt="foto Renata Guimaraes">
-                </div>
-                <h3 class="sub-bio">Renata Guimarães</h3>
-                <p class="text-bio">
-                    Graduada em Publicidade e Propaganda e Relações Públicas pela UFMG, integra o time da Ambev há 11
-                    anos. Tem trajetória dedicada à área de Gente & Gestão, onde começou como Estagiária em 2002.
-                    Atualmente é Head de Tech People & Transformation para a América do Sul.
-                </p>
-            </div>
 
-            <div class="col-md-6 float-right baloom-box">
-                <div class="border"><img class="baloom" src="images/person-thayany.png" alt="foto Thayany Ferregutti">
-                </div>
-                <h3 class="sub-bio">Thaiany Ferregutti</h3>
-                <p class="text-bio">
-                    Consultora de Vendas da Shell Especialista em desenvolvimento e reprogramação da
-                    mente humana Mentora, Terapeuta e Instrutora Internacional de Thetahealing, com mais de
-                    20 cursos na área. Terapeuta multidimensional.
-                </p>
-                <p class="text-bio">
-
-                </p>
-            </div>
-        </div>
     </section>
 
-    <section id="register" style="height: 640px;">
+    <section id="register" class="section height">
 
         <div class="submit-box">
             <div>
-                <h3 class="invite">Inscreva-se</h3>
-
-                <p id="fail-nome" class="label">Nome Completo</p>
+                <center><h3 class="invite">Inscreva-se</h3></center>
+                <br>
+                <p class="label">Nome Completo</p>
                 <input class="input" type="text" placeholder="nome" id="nome" pattern="^\D{2,}\s[\D\s]{2,}$" required />
-
-                <p id="fail-email" class="label">E-mail</p>
+                <p class="alert" id="fail-nome"></p>
+                <br>
+                <p class="label">E-mail</p>
                 <input class="input" type="email" placeholder="seu-email@email.com" id="email" required />
-
-                <input class="btn-input" type="button" onclick="addData()" value="QUERO FAZER PARTE" />
+                <p class="alert" id="fail-email"></p>
+                <br>
+                <br>
+                <input class="button" type="button" onclick="addData()" value="QUERO FAZER PARTE" />
             </div>
         </div>
 
@@ -178,7 +218,7 @@
 
     <!-- Exit Intent Pop Up -->
     <div class="modal-custom" id="modal-custom">
-    <!--
+         <!--
         <div class="modal-header-custom">
             <div class="title-pop-up-custom"><img class="title-pop-up-custom" src="images/logo-white.png" alt="Dica de Guerreira"></div>
             <button data-close-custom-button class="close-button-custom">&times;</button>
@@ -188,25 +228,25 @@
             <p>Não deixe passar, o “Meetup Guerreiras do Empreendedorismo”, um evento inteiramente online 
                 voltado para mulheres empreendedoras e guerreiras!</p>
         </div>
-        <table>
+        <table class="table">
             <caption>O evento começa em</caption>
             <tr>
-                <th>horas</th>
-                <th>min</th>
-                <th>seg</th>
+                <th class="table-header">horas</th>
+                <th class="table-header">min</th>
+                <th class="table-header">seg</th>
             </tr>
             <tr>
-                <td id="hours">00</td>
-                <td id="minutes">00</td>
-                <td id="seconds">00</td>
+                <td class="table-cell" id="hours">00</td>
+                <td class="table-cell" id="minutes">00</td>
+                <td class="table-cell" id="seconds">00</td>
             </tr>
             <tr>
-                <td colspan="3">
+                <td class="table-cell" colspan="3">
                     <a href="#register"><button data-close-custom-button id="modal-leave-custom">VOU PARTICIPAR!</button></a>
                 </td>
             </tr>
         </table>
-    -->
+        -->
         <div class="modal-header-custom">
             <div class="title-pop-up-custom"><img class="title-pop-up-custom" src="images/logo-white.png"
                     alt="Dica de Guerreira"></div>
@@ -215,9 +255,9 @@
         <div class="modal-body-custom">
             O evento já rolou mas você ainda consegue assistir! Acompanhe a gravação no youtube!
         </div>
-        <table>
+        <table class="table">
             <tr>
-                <td colspan="3">
+                <td class="table-cell" colspan="3">
                     <a href="https://www.youtube.com/watch?v=bI73Jv5aEZY"><button data-close-custom-button
                             id="modal-leave-custom">Quero Assistir!</button></a>
                 </td>
@@ -227,13 +267,19 @@
     <div id="overlay-custom"></div>
 
     <footer class="footer">
-        &copy; 2020 Todos os direitor reservados
+        &copy; 2020 Todos os direitos reservados
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS-->
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
     <script type="module" src="js/db-shtn.js"></script>
 

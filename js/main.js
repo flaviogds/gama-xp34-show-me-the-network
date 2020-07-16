@@ -22,7 +22,7 @@ function addData() {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Jul 9, 2020 19:00:00").getTime();
+var countDownDate = new Date("Jul 9, 2021 19:00:00").getTime();
 var finalEvent = new Date("Jul 9, 2020 21:10:00").getTime();
 
 // Update the count down every 1 second
