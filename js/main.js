@@ -22,7 +22,7 @@ function addData() {
 }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Jul 9, 2021 19:00:00").getTime();
+var countDownDate = new Date("Jul 9, 2020 19:00:00").getTime();
 var finalEvent = new Date("Jul 9, 2020 21:10:00").getTime();
 
 // Update the count down every 1 second
@@ -54,10 +54,10 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     if(now<finalEvent){
-      document.getElementById("evento").innerHTML = "<div class='event-now'><p class='meetup'>Meetup começa agora</p></div><center class='cont-btn'><a href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>YouTube</button></a></center>";
+      document.getElementById("evento").innerHTML = "<div class='event'><center><h2 class='event-text'>Meetup começa agora</h2></center></div><div id='timer'><center><br><a href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='button'>YouTube</button></a><br><br></center></div>";
     }
     if(now>finalEvent){
-      document.getElementById("evento").innerHTML = "<div class='cont-event' id='data-evento'><h2 class='event'>Assista o meetup em </h2></div><center class='cont-btn'><a href='https://www.youtube.com/watch?v=bI73Jv5aEZY'><button class='btn-event'>YouTube</button></a></center>";
+      document.getElementById("evento").innerHTML = "<div class='event'><center><h2 class='event-text'>Assista agora</h2></center></div><div id='timer'><center><br><button type='button' class='button' data-toggle='modal' data-target='#youtubePlayer'>YouTube</button><br><br></center></div>";
     }
   }
 
@@ -95,3 +95,6 @@ function closeModal(modal) {
   modal.classList.remove('active');
   overlay.classList.remove('active');
 }
+
+
+/*<div class='event'><center><h2 class='event-text'>Assista agora</h2></center></div><div id='timer'><center><br><button type='button' class='button' data-toggle='modal' data-target='#youtubePlayer'>YouTube</button><br><br></center></div>"*/

@@ -47,7 +47,7 @@
     width: 47vw;
     min-width: 100px;
     background: #844685;
-    border: 0;
+    border: none;
     /*Typography*/
     font-size: 1.6vw;
     font-weight: bold;
@@ -195,6 +195,13 @@
     font-size: 4.8vw;
     line-height: 130%;
     color: #000000;
+}
+/*===================Pop up Youtube player=================*/
+.custom{
+    margin-top: 20%;
+    padding: none;
+    background: rgba(0,0,0,0);
+    border:none;
 }
 /*===================Exit Intent Pop Up ===================*/
 .modal-custom {
